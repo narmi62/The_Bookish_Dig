@@ -26,7 +26,7 @@ function Cart() {
   // Fetch the logged-in customer's cart
   const fetchCart = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/cart", {
+      const response = await fetch("https://the-bookish-dig.onrender.com/api/cart", {
         headers: await getAuthHeaders(),
       });
 
@@ -53,7 +53,7 @@ function Cart() {
   const removeFromCart = async (bookID) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cart/${bookID}`,
+        `https://the-bookish-dig.onrender.com/api/cart/${bookID}`,
         {
           method: "DELETE",
           headers: await getAuthHeaders(),
@@ -80,7 +80,7 @@ function Cart() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/cart/${bookId}`,
+        `https://the-bookish-dig.onrender.com/api/cart/${bookId}`,
         {
           method: "PATCH",
           headers: await getAuthHeaders(true),

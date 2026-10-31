@@ -21,7 +21,7 @@ function AdminOrders() {
 
         // Send the token to the backend.
         const response = await fetch(
-          "http://localhost:5000/api/orders",
+          "https://the-bookish-dig.onrender.com/api/orders",
           {
             headers: {
               Authorization: `Bearer ${token}`,

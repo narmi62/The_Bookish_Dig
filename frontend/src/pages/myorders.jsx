@@ -23,7 +23,7 @@ function MyOrders() {
         const token = await user.getIdToken();
 
         const response = await fetch(
-          "http://localhost:5000/api/orders/myorders",
+          "https://the-bookish-dig.onrender.com/api/orders/myorders",
           {
             headers: {
               Authorization: `Bearer ${token}`,

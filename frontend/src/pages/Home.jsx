@@ -20,7 +20,7 @@ function Home() {
 
     const token = await user.getIdToken();
 
-    const response = await fetch("http://localhost:5000/api/cart", {
+    const response = await fetch("https://the-bookish-dig.onrender.com/api/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function Home() {
 };
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/books")
+    fetch("https://the-bookish-dig.onrender.com/api/books")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch books");
