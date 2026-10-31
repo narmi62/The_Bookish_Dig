@@ -85,11 +85,11 @@ function Navbar() {
               Sign Up
             </Link>
           </div>
-        ) : !isAdmin ? (
+        ) : (
           <button onClick={handleLogout} className="hover:text-amber-300">
             Logout
           </button>
-        ) : null}
+        )}
         {/* Admin Dropdown */}
         <div className="relative">
           <button
